@@ -8,11 +8,19 @@ void setup() {
    //Landscape, not portrait nor square 
    String landscape = "good to go!";
    String portrait = "bruh, turn off da phun" ;
-   String displayOrientation = ( width >= height) ? landscape : portrait ;
+   String displayOrientation = ( displayWidth >= displayHqeight) ? landscape : portrait ;
    if ( displayOrientation==portrait ) println ( displayOrientation ); //Portrait Display Orientation
-   if ( displayOrientation==landscape ) appWidth = width ;
-   if ( displayOrientation==landscape ) appHeight = height ;
+   if ( displayOrientation==landscape ) appWidth = displayWidth ;
+   if ( displayOrientation==landscape ) appHeight = displayHeight ;
    println (appWidth, appHeight); //will be NULL if portrait ... until landscape (future lesson) 
+   //
+   //Note: variables similar to Face Rect() on Measles
+   int canvasCenter = smallerDisplayDimension*1/2;
+   quitButtonX = ;
+   quitButtonY = ;
+   quitButtonWidth = appWidth*1/2;
+   quitButtonHeight = appHeight*1/2;
+   
 }//End setup
 //
 void draw() 
