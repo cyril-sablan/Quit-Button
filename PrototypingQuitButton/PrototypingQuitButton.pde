@@ -6,10 +6,13 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 void setup() {
    fullScreen(); //displayWidth, displayHeight
    //Landscape, not portrait nor square 
-   String displayOrientation = ( width >= height) ? "good to go" : "bruh, turn off da phun" ;
-   if ( width < height ) println ( displayOrientation ); //Portrait Display Orientation
-   if ( width >= height ) appWidth = width ;
-   if ( width >= height ) appHeight = height ;
+   String landscape = "good to go!";
+   String portrait = "bruh, turn off da phun" ;
+   String displayOrientation = ( width >= height) ? landscape : portrait ;
+   if ( displayOrientation==portrait ) println ( displayOrientation ); //Portrait Display Orientation
+   if ( displayOrientation==landscape ) appWidth = width ;
+   if ( displayOrientation==landscape ) appHeight = height ;
+   println (appWidth, appHeight); //will be NULL if portrait ... until landscape (future lesson) 
 }//End setup
 //
 void draw() 
