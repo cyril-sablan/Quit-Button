@@ -1,6 +1,7 @@
 //Global Variables
 int appWidth, appHeight; 
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+color orange=#FAAE08, red=#FA0A00, resetWhite=#FFFFFF, buttonColor;
 //appWidth, appHeight
 //
 void setup() {
@@ -26,7 +27,10 @@ void setup() {
 //
 void draw() 
 {
+  buttonColor = red; //orange
+  fill(buttonColor);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight );
+  fill(resetWhite);
 }//End draw
 //
 void keyPressed() 
