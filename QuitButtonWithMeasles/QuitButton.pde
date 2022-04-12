@@ -3,10 +3,10 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 color orange=#FAAE08, red=#FA0A00, buttonColor;
 //
 void quitButtonSetupPopulation(int centerX, int centerY) { //ignore Parameter concept
-  quitButtonX = centerX - appWidth*1/4 ; //1/4 on one-half, 1/4 on other half 
-  quitButtonY = centerY- appHeight*1/4 ;
-  quitButtonWidth = appWidth*1/2;
-  quitButtonHeight = appHeight*1/2;
+  quitButtonX = centerX - appWidth*5/10 ; //1/4 on one-half, 1/4 on other half 
+  quitButtonY = centerY- appHeight*3/10;
+  quitButtonWidth = appWidth*1/5;
+  quitButtonHeight = appHeight*1/5;
 }//End quitButtonSetup
 //
 void quitButtonDraw () {
