@@ -4,6 +4,7 @@ void population () {
   int centerX = appWidth*1/2;
   int centerY = appHeight*1/2; 
   quitButtonSetupPopulation(centerX, centerY); //Passing Parameters
+  startButtonSetupPopulation(centerX, centerY);
   //Variable Population
   smallerDisplayDimension = appHeight; //ALWAYS in Landscape 
   reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"

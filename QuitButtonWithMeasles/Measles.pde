@@ -25,6 +25,6 @@ void measleDraw() {
   ellipse( measleX, measleY, measleDiameter, measleDiameter); 
   stroke(reset); //reset to 1 pixel
   fill(resetWhite); //reset to first color
-  
+
   //
 }//End measleDraw

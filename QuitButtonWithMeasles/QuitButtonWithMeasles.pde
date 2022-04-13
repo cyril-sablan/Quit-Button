@@ -3,6 +3,7 @@ int appWidth, appHeight;
 int reset, smallerDisplayDimension;
 color resetWhite=#FFFFFF;
 Boolean nightMode=false;
+Boolean start=true; 
 //
 float eyeDiameter;
 //
@@ -11,20 +12,22 @@ void setup() {
   displayOrientation();
   population();
   displaySetup();
-  population();
   faceSetup();
-  textSetup();
+  textQuitSetup();
+  textStartSetup();
 }//End setup
 //
 void draw() 
 {
   quitButtonDraw();
+  startButtonDraw();
   measleDraw(); 
   leftEyeDraw();
   rightEyeDraw();
   noseDraw();
   mouthDraw();
-  textDraw();
+  textQuitDraw();
+  textStartDraw();
 }//End draw
 //
 void keyPressed() 
@@ -35,6 +38,7 @@ void keyPressed()
 void mousePressed() 
 {
   quitButtonMousePressed();
+  startButtonMousePressed();
 }//End mousePressed
 //
 //End Main Program
