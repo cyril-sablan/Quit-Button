@@ -6,8 +6,8 @@ PFont titleFont;
 color black=#000000,resetDefaultInk=#FFFFFF;
 
 void textSetup() {
-  titleX =  appWidth*4.9/10; 
-  titleY =  appHeight*3/10;
+  titleX =  appWidth*1/1000; 
+  titleY =  appHeight*2/10;
   titleWidth = appWidth*1/5; //Rect ends at 4/5's of width
   titleHeight = appHeight*1/5; //Rect ends at 2/10's of height 
   titleFont = createFont("SimSun", 55);
