@@ -31,7 +31,7 @@ void startButtonDraw () {
   fill(resetWhite);
 }//End quitButtonDraw
 void startButtonMousePressed() {
-  if ( mouseX>startButtonX && mouseX<startButtonX+quitButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) start();
+  if ( mouseX>startButtonX && mouseX<startButtonX+startButtonWidth && mouseY>startButtonY && mouseY<startButtonY+startButtonHeight ) start();
 }//End quitButtonMousePressed
 //
 //End Quit Button
